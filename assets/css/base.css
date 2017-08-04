@@ -1,0 +1,61 @@
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    height:100%;
+    color: #555;
+    font: normal 14px "Microsoft YaHei";
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form {
+    margin:0;
+}
+
+ul,ol {
+    padding-left:0;
+    list-style-type:none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*image with no-border*/
+a img {
+    border:0;
+}
+
+img{
+    border:0;
+    vertical-align: middle;
+}
+
+.btn {
+    border: 0;
+    outline: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*清楚浮动*/
+.fix {
+    *zoom: 1;
+}
+
+.fix:after {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
