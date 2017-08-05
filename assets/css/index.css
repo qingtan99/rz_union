@@ -40,9 +40,13 @@
 }
 
 .h-in-banner {
+    position: relative;
     width: 100%;
     height: 490px;
-    background: #ccc;
+}
+
+.my-slideshow {
+    width: 100%;
 }
 
 .path-banner {
@@ -104,7 +108,6 @@
 }
 
 .types-content .types-item {
-    float: left;
     padding-top: 90px;
     text-align: center;
     width: 395px;
@@ -115,10 +118,9 @@
     display: inline-block;
     margin: 0 46px;
     width: 196px;
-    height: 240px;
 }
 
-.types-item a > p {
+.types-item p {
     padding-top: 10px;
     font-size: 28px;
     color: #333;
@@ -151,51 +153,51 @@
 }
 
 .types-icon.i-show {
-    background: url("../images/index/icon-show.png") no-repeat;
+    background: url("../images/index/icon/icon-show.png") no-repeat;
 }
 
 .types-icon.i-mating {
-    background: url("../images/index/icon-onli-mar.png") no-repeat;
+    background: url("../images/index/icon/icon-onli-mar.png") no-repeat;
 }
 
 .types-icon.i-exte {
-    background: url("../images/index/icon-exte.png") no-repeat;
+    background: url("../images/index/icon/icon-exte.png") no-repeat;
 }
 
 .types-icon.i-gatew {
-    background: url("../images/index/icon-gatew.png") no-repeat;
+    background: url("../images/index/icon/icon-gatew.png") no-repeat;
 }
 
 .types-icon.i-wechat {
-    background: url("../images/index/icon-wechat-n.png") no-repeat;
+    background: url("../images/index/icon/icon-wechat-n.png") no-repeat;
 }
 
 .types-icon.i-e {
-    background: url("../images/index/icon-e.png") no-repeat;
+    background: url("../images/index/icon/icon-e.png") no-repeat;
 }
 
 .types-hover.i-hov-show {
-    background: url("../images/index/icon-hov-show.png") no-repeat;
+    background: url("../images/index/icon/icon-hov-show.png") no-repeat;
 }
 
 .types-hover.i-hov-mating {
-    background: url("../images/index/icon-hov-mar.png") no-repeat;
+    background: url("../images/index/icon/icon-hov-mar.png") no-repeat;
 }
 
 .types-hover.i-hov-exte {
-    background: url("../images/index/icon-hov-exte.png") no-repeat;
+    background: url("../images/index/icon/icon-hov-exte.png") no-repeat;
 }
 
 .types-hover.i-hov-gatew {
-    background: url("../images/index/icon-hov-gate-w.png") no-repeat;
+    background: url("../images/index/icon/icon-hov-gate-w.png") no-repeat;
 }
 
 .types-hover.i-hov-wechat {
-    background: url("../images/index/icon-hov-wechat.png") no-repeat;
+    background: url("../images/index/icon/icon-hov-wechat.png") no-repeat;
 }
 
 .types-hover.i-hov-e {
-    background: url("../images/index/icon-hov-e.png") no-repeat;
+    background: url("../images/index/icon/icon-hov-e.png") no-repeat;
 }
 
 .t-ml44 {
@@ -237,6 +239,7 @@
 
 .types-chat-con {
     margin-top: 52px;
+    padding-bottom: 35px;
 }
 
 .contact-info {
@@ -256,34 +259,141 @@
 }
 
 .contact-info p {
+    padding-left: 8px;
     font-size: 16px;
 }
 
 .contact-info .icon-info {
     display: inline-block;
     margin-bottom: 18px;
-    padding: 0 11px 0 8px;
+    padding-right: 11px;
     width: 50px;
     height: 50px;
     vertical-align: -webkit-baseline-middle;
 }
 
 .icon-info.icon-phone {
-    background: url("../images/index/icon-phone.png") no-repeat;
+    background: url("../images/index/icon/icon-phone.png") no-repeat;
 }
 
 .icon-info.icon-mobile {
-    background: url("../images/index/icon-mobile.png") no-repeat;
+    background: url("../images/index/icon/icon-mobile.png") no-repeat;
 }
 
 .icon-info.icon-qq {
-    background: url("../images/index/icon-qq.png") no-repeat;
+    background: url("../images/index/icon/icon-qq.png") no-repeat;
 }
 
 .icon-info.icon-msg {
-    background: url("../images/index/icon-msg.png") no-repeat;
+    background: url("../images/index/icon/icon-msg.png") no-repeat;
 }
 
 .icon-info.icon-address {
-    background: url("../images/index/icon-address.png") no-repeat;
+    background: url("../images/index/icon/icon-address.png") no-repeat;
+}
+
+.types-s-icon {
+    display: inline-block;
+    height: 202px;
+    width: 190px;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 1;
+}
+
+.types-s-hover {
+    display: none;
+    position: absolute;
+    top: -19px;
+    left: -19px;
+    height: 228px;
+    width: 228px;
+    z-index: 9;
+}
+
+.types-item a:hover .types-s-icon{
+    opacity: 0;
+    display: inline-block;
+}
+
+.types-item a:hover .types-s-hover{
+    display: block;
+}
+
+.types-s-icon.i-s1 {
+    background: url("../images/index/icon/icon-s1.png") no-repeat;
+}
+
+.types-s-icon.i-s2 {
+    background: url("../images/index/icon/icon-s2.png") no-repeat;
+}
+
+.types-s-icon.i-s3 {
+    background: url("../images/index/icon/icon-s3.png") no-repeat;
+}
+
+.types-s-icon.i-s4 {
+    background: url("../images/index/icon/icon-s4.png") no-repeat;
+}
+
+.types-s-icon.i-s5 {
+    background: url("../images/index/icon/icon-s5.png") no-repeat;
+}
+
+.types-s-icon.i-s6 {
+    background: url("../images/index/icon/icon-s6.png") no-repeat;
+}
+
+.types-s-icon.i-s7 {
+    background: url("../images/index/icon/icon-s7.png") no-repeat;
+}
+
+.types-s-icon.i-s8 {
+    background: url("../images/index/icon/icon-s8.png") no-repeat;
+}
+
+.types-s-icon.i-s9 {
+    background: url("../images/index/icon/icon-s9.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s1 {
+    background: url("../images/index/icon/icon-hov-s1.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s2 {
+    background: url("../images/index/icon/icon-hov-s2.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s3 {
+    background: url("../images/index/icon/icon-hov-s3.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s4 {
+    background: url("../images/index/icon/icon-hov-s4.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s5 {
+    background: url("../images/index/icon/icon-hov-s5.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s6 {
+    background: url("../images/index/icon/icon-hov-s6.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s7 {
+    background: url("../images/index/icon/icon-hov-s7.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s8 {
+    background: url("../images/index/icon/icon-hov-s8.png") no-repeat;
+}
+
+.types-s-hover.i-hov-s9 {
+    background: url("../images/index/icon/icon-hov-s9.png") no-repeat;
+}
+
+.map-container {
+    margin-top: 26px;
+    width: 100%;
+    height: 300px;
 }
