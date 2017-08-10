@@ -38,6 +38,22 @@ img{
     outline: none;
 }
 
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
 .fl {
     float: left;
 }
@@ -70,7 +86,6 @@ img{
 .g-hd-cont {
     margin: 0 auto;
     width: 1198px;
-    height: 100px;
 }
 
 .m-logo .logo {
@@ -78,6 +93,11 @@ img{
     display: inline-block;
     width: 174px;
     height: 41px;
+    overflow: hidden;
+}
+
+.m-hd-nav {
+    height: 100px;
     overflow: hidden;
 }
 
