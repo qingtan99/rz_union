@@ -19,6 +19,71 @@
 .h-img img {
     width: 100%;
     height: 100%;
+    animation: imgAnim 8s linear;
+    -moz-animation: imgAnim 8s linear;	/* Firefox */
+    -webkit-animation: imgAnim 8s linear;	/* Safari 和 Chrome */
+    -o-animation: imgAnim 8s linear;	/* Opera */
+    transform: scale(1);
+}
+
+@keyframes imgAnim {
+    0% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes imgAnim {
+    0% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes imgAnim {
+    0% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes imgAnim {
+    0% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .h-text {
@@ -33,6 +98,10 @@
     padding: 10px 0;
     font-size: 36px;
     background: #00baff;
+    animation: pAnimation .5s linear;
+    -moz-animation: pAnimation .5s linear;	/* Firefox */
+    -webkit-animation: pAnimation .5s linear;	/* Safari 和 Chrome */
+    -o-animation: pAnimation .5s linear;	/* Opera */
 }
 
 .h-text span {
@@ -40,6 +109,90 @@
     padding-left: 10px;
     margin-top: 20px;
     font-size: 20px;
+    animation: spanAnim .7s linear;
+    -moz-animation: spanAnim .7s linear;	/* Firefox */
+    -webkit-animation: spanAnim .7s linear;	/* Safari 和 Chrome */
+    -o-animation: spanAnim .7s linear;	/* Opera */
+}
+
+@keyframes pAnimation {
+    0% {
+        margin-left: -300px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes pAnimation {
+    0% {
+        margin-left: -300px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes pAnimation {
+    0% {
+        margin-left: -300px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes pAnimation {
+    0% {
+        margin-left: -300px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spanAnim {
+    0% {
+        margin-left: -350px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes spanAnim {
+    0% {
+        margin-left: -350px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes spanAnim {
+    0% {
+        margin-left: -350px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes spanAnim {
+    0% {
+        margin-left: -350px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .aus-main {
