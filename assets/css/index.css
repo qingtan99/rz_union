@@ -363,3 +363,84 @@
 .anchorBL {
     display: none;
 }
+
+.m-online {
+    position: fixed;
+    right: 0;
+    top: 208px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.u-online {
+    position: relative;
+}
+
+.u-online ul {
+    position: absolute;
+    right: 0px;
+    top: -16px;
+    padding: 0 8px;
+    width: 116px;
+    border-radius: 16px;
+    border: 4px solid #5bb2ff;
+    background: #fff;
+    opacity: 0;
+    transition: all .3s;
+    z-index: -1;
+}
+
+.u-online ul li {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.u-online ul li:last-child {
+    padding: 9px 0;
+}
+
+.chat-item a {
+    display: inline-block;
+    padding: 9px 0;
+    width: 100%;
+    color: #666;
+    border-bottom: 1px solid #ededed;
+}
+
+.chat-item a:hover {
+    color: #5bb2ff;
+}
+
+.online-container {
+    display: inline-block;
+    width: 34px;
+    padding: 21px 3px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: #5bb2ff;
+    transition: all .3s;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.online-container:hover {
+    background: rgba(91, 178, 255, .8);
+}
+
+.online-container em {
+    display: block;
+    padding-top: 8px;
+    font-style: normal;
+    font-family: serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.chat-item a i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url('../../assets/images/index/icon/icon-chatqq.png') no-repeat center center;
+}
