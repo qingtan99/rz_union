@@ -196,14 +196,6 @@
     padding-bottom: 35px;
 }
 
-.contact-info {
-    width: 50%;
-}
-
-.sub-demand {
-    width: 50%;
-}
-
 .contact-info h4,
 .sub-demand h4 {
     padding: 0 0 22px 8px;
@@ -213,6 +205,8 @@
 }
 
 .contact-info p {
+    float: left;
+    width: 583px;
     padding-left: 8px;
     font-size: 16px;
 }

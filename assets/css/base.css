@@ -100,15 +100,15 @@ img{
 
 .m-hd-nav {
     height: 100px;
-    overflow: hidden;
 }
 
 .m-hd-nav li {
+    position: relative;
     line-height: 115px;
     text-align: center;
 }
 
-.m-hd-nav li a {
+.m-hd-nav li .hd-nav-a {
     display: inline-block;
     padding: 0 18px;
     height: 96px;
@@ -117,10 +117,71 @@ img{
     color: #555;
 }
 
-.m-hd-nav li a:hover {
+.nav-chilist {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 930px;
+    right: -226px;
+    line-height: 1;
+    z-index: 12;
+}
+
+.nav-chilist .chil-item:nth-child(5),
+.nav-chilist .chil-item:last-child {
+    border-right: 1px solid transparent;
+}
+
+.chil-item {
+    display: block;
+    position: relative;
+    margin: 16px 0 32px;
+    height: 64px;
+    width: 185px;
+    text-align: center;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+.chil-item a {
+    color: #fff;
+}
+
+.chil-item .i-defaul {
+    display: inline-block;
+    height: 30px;
+    overflow: hidden;
+}
+
+.chil-item .i-hover {
+    display: none;
+}
+
+.chil-item:hover .i-defaul {
+    display: none;
+}
+
+.chil-item:hover .i-hover {
+    display: inline-block;
+    height: 30px;
+}
+
+.chil-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.m-hd-nav li .hd-nav-a:hover {
     color: #4099e9;
     background: #f5faff;
     border-bottom: 4px solid #4099e9 !important;
+}
+
+.m-hd-nav li .hd-nav-a:hover .nav-chilist {
+    display: block;
 }
 
 .h-nav-active {
