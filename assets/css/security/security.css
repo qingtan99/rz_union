@@ -52,3 +52,11 @@
 .bg-ff {
     background-color: #fff;
 }
+
+.h-in-banner {
+    height: 380px;
+}
+
+.edslider .controls .paginator {
+    top: 345px;
+}
